@@ -1,6 +1,6 @@
 ## Electron + TypeScript + React
 
-Boilerplate for a project using Electron, React and Typescript.
+Boilerplate for a project using Electron, React, Typescrip and TailwindCSS.
 
 ## Installation
 
@@ -17,18 +17,6 @@ Just run `start` script.
 ```bash
 yarn start
 ```
-
-## Packaging
-
-To generate the project package based on the OS you're running on, just run:
-
-```bash
-yarn package
-```
-
-## Contributing
-
-Pull requests are always welcome 😃.
 
 ## License
 
