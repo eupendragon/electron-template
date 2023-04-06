@@ -1,8 +1,8 @@
 {
-  "name": "stormail",
+  "name": "electron-template",
   "author": "@eupendragon",
   "version": "1.0.0",
-  "description": "Email app design",
+  "description": "electron-template",
   "main": "./.webpack/main/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -71,7 +71,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "name": "Stormail",
+        "name": "electron-template",
         "executableName": "electron-starter",
         "icon": "assets/icon",
         "extraResource": [
@@ -103,7 +103,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Stormail"
+            "name": "electron-template"
           }
         },
         {
