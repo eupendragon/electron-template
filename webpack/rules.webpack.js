@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = [
   {
     test: /\.node$/,
@@ -17,8 +19,8 @@ module.exports = [
     test: /\.(js|ts|tsx)$/,
     exclude: /node_modules/,
     use: {
-      loader: 'babel-loader'
-    }
+      loader: 'babel-loader',
+    },
   },
   {
     test: /\.(png|jpe?g|gif)$/i,
@@ -26,5 +28,25 @@ module.exports = [
     options: {
       name: '[path][name].[ext]',
     },
-  }
+  },
+  {
+    test: /\.jsx?$/,
+    include: [path.resolve(__dirname, '../src')],
+    loader: 'babel-loader',
+    resolve: {
+      extensions: ['.js', '.jsx', '.json'],
+    },
+  },
+  {
+    test: /\.(html)$/,
+    include: [path.resolve(__dirname, '../src')],
+    use: {
+      loader: 'html-loader',
+    },
+  },
+  {
+    test: /\.css$/,
+    include: [path.resolve(__dirname, '../src')],
+    use: ['style-loader', 'css-loader', 'postcss-loader'],
+  },
 ]
